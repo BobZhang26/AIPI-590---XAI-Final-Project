@@ -1,6 +1,6 @@
 [![Python Application Test with Github Actions](https://github.com/BobZhang26/AIPI-590---XAI-Final-Project/actions/workflows/cicd.yml/badge.svg)](https://github.com/BobZhang26/AIPI-590---XAI-Final-Project/actions/workflows/cicd.yml)
 # **XAI: Knowledge Graph Visualization of GraphRAG Model**
-[![Watch the demo]()](https://youtu.be/m6kgrNgq874?si=Vjo5bs7pmweYbDzF)
+[![Watch the demo](XAI_thumbnail.png)](https://youtu.be/m6kgrNgq874?si=Vjo5bs7pmweYbDzF)
 ## **Introduction**
 The demand for transparency and trust in decision-making processes has become
 paramount. This is particularly critical in high-stakes domains such as **healthcare** and
