@@ -31,6 +31,8 @@ This project demonstrates the construction of GraphRAG from scratch, integrating
     - **Using Docker**: Recommended for users who do not have Neo4j pre-installed on their desktop.
     - **On Desktop**: For users with a local Neo4j setup.
   - The graph database utilizes **Cypher query language**, similar to SQL in relational databases, to manage and retrieve data.
+    
+![Screenshot 2024-12-04 at 23 14 25](https://github.com/user-attachments/assets/24f36dc6-838a-49bd-bd70-b92d562bdea2)
 
 ---
 ### **2. Enhancing Retrieval with Vector Indexing**
@@ -41,6 +43,19 @@ This project demonstrates the construction of GraphRAG from scratch, integrating
     - Extracted entities from the knowledge graph.
   - This enables the construction of a **vector index** to enhance retrieval efficiency.
 
+```python
+vector_index = Neo4jVector.from_existing_graph(
+    embedding=OpenAIEmbeddings(),
+    url=os.getenv("NEO4J_URL"),
+    username=os.getenv("NEO4J_USERNAME"),
+    password=os.getenv("NEO4J_PASSWORD"),
+    search_type="hybrid",
+    node_label="Document",
+    text_node_properties=["text"],
+    embedding_node_property="embedding",
+)
+vector_retriever = vector_index.as_retriever()
+```
 - **Hybrid Retrieval Mechanism**:
   - Combines graph-based retrieval using Cypher queries with vector similarity search to provide accurate and contextually relevant results.
 
