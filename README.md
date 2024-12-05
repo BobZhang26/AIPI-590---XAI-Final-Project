@@ -59,6 +59,20 @@ vector_retriever = vector_index.as_retriever()
 - **Hybrid Retrieval Mechanism**:
   - Combines graph-based retrieval using Cypher queries with vector similarity search to provide accurate and contextually relevant results.
 
+
+![Screenshot 2024-12-04 at 23 48 25](https://github.com/user-attachments/assets/8f46222f-ec23-48a6-b311-6ff5a3680b3a)
+
+```python
+CALL db.index.fulltext.queryNodes('fulltext_entity_id', 'ARDS', {limit: 200})
+YIELD node, score
+WITH node
+MATCH (node)-[r]->(neighbor)
+RETURN node, r, neighbor
+UNION
+MATCH (node)<-[r]-(neighbor)
+RETURN node, r, neighbor
+LIMIT 50
+```
 ---
 
 ### **3. Workflow Implementation**
