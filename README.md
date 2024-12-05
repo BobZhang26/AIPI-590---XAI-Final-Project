@@ -84,6 +84,8 @@ LIMIT 50
   - Input queries are processed through GraphRAG, and the model retrieves information using the hybrid mechanism.
   - The model-generated answers are compared to ground truth data to evaluate accuracy and reliability.
 
+<img width="842" alt="Screenshot 2024-12-04 at 23 50 59" src="https://github.com/user-attachments/assets/251dd167-c1a7-4b11-8c89-665e7cea7c03">
+
 ---
 
 ### **4. Tools and Frameworks**
