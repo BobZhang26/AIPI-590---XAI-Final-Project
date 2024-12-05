@@ -11,7 +11,10 @@ professionals can interpret its decisions.
 
 > This project aims to bridge this gap by enhancing the explainability of GraphRAG through the implementation of a visualization method that allows users to explore the underlying knowledge graph. By enabling interaction with the graph's entities and relationships, this approach provides insight into the model's retrieval mechanisms, fostering greater transparency and trust in its decision-making process.
 
+## **Methodology**
 This project demonstrates the construction of GraphRAG from scratch, integrating a graph database powered by **Neo4j** and comparing model-generated answers with ground truth data. The methodology involves building the knowledge graph, implementing the retrieval mechanism, and evaluating the model's performance. The process utilizes **LangChain**, **LLM models (Llama 3.1 and GPT-4 Turbo)**, and **OpenAI’s text-embedding-3-large** for entity extraction and retrieval.
+<img width="871" alt="Screenshot 2024-12-04 at 23 42 10" src="https://github.com/user-attachments/assets/afba6c91-ca54-48bc-84be-b863e57dc6b2">
+
 
 ---
 
@@ -72,3 +75,4 @@ This project demonstrates the construction of GraphRAG from scratch, integrating
   - **Desktop**: For advanced users with Neo4j pre-installed.
 - **Cypher Query Language**:
   - The inherent query language of Neo4j, used to interact with the graph database and retrieve nodes and relationships efficiently.
+
