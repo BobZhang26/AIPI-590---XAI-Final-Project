@@ -19,5 +19,9 @@ python-dotenv
 json-repair 
 langchain-openai 
 langchain_core
+pandas = 2.2.3
+sentence_transformers
+ollama
+ast
 
 
